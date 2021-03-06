@@ -1,0 +1,153 @@
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+.bgColor:nth-child(even) {
+  background-color: rgba(238, 238, 238, 0.911);
+}
+.bgColor:nth-child(odd) {
+  background-color: lightblue;
+}
+
+/* jumbotron */
+.hero {
+  height: 500px;
+  width: 1400px;
+  background-image: url(../img/hero1-photo.png);
+  background-repeat: no-repeat;
+  background-position-x: 500px;
+  margin-top: -85px;
+}
+
+.hero h1 {
+  font-size: 38px;
+  color: #022746;
+  padding-top: 200px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.hero p {
+  color: #ba9b2d;
+  padding-left: 30px;
+  padding-right: 30px;
+  margin-top: -10px;
+  font-size: 25px;
+  letter-spacing: .2px;
+}
+
+.hero a {
+  text-decoration: none;
+  color: #fff;
+  margin-left: 30px;
+  background-color: #ba9b2d;
+  font-size: 21px;
+  padding: 5px 10px;
+}
+.hero a:hover {
+  background-color: #022746;
+}
+
+/* education */
+.education {
+  display: flex;
+  justify-content: space-around;
+  padding: 10px 0;
+}
+/* sd */
+.education .sd {
+  width: 400px;
+  height: 300px;
+  background-color: #022746;
+  position: relative;
+}
+
+.education .sd p {
+  position: absolute;
+  top: 60px;
+  font-size: 26px;
+  color: #eee;
+  width: inherit;
+  text-align: center;
+}
+
+.education .sd img {
+  position: absolute;
+  width: inherit;
+  height: inherit;
+}
+
+.education .sd h1 {
+  position: absolute;
+  top: -22px;
+  background-color: rgba(0, 0, 0, .3);
+  color: #fff;
+  width: inherit;
+  text-align: center;
+  line-height: 300px;
+}
+/* smp */
+.education .smp {
+  width: 400px;
+  height: 300px;
+  background-color: #022746;
+  position: relative;
+}
+
+.education .smp p {
+  position: absolute;
+  top: 60px;
+  font-size: 26px;
+  color: #eee;
+  width: inherit;
+  text-align: center;
+}
+
+.education .smp img {
+  position: absolute;
+  width: inherit;
+  height: inherit;
+}
+
+.education .smp h1 {
+  position: absolute;
+  top: -22px;
+  background-color: rgba(0, 0, 0, .3);
+  color: #fff;
+  width: inherit;
+  text-align: center;
+  line-height: 300px;
+}
+/* sma */
+.education .sma {
+  width: 400px;
+  height: 300px;
+  background-color: #022746;
+  position: relative;
+}
+
+.education .sma p {
+  position: absolute;
+  top: 60px;
+  font-size: 26px;
+  color: #eee;
+  width: inherit;
+  text-align: center;
+}
+
+.education .sma img {
+  position: absolute;
+  width: inherit;
+  height: inherit;
+}
+
+.education .sma h1 {
+  position: absolute;
+  top: -22px;
+  background-color: rgba(0, 0, 0, .3);
+  color: #fff;
+  width: inherit;
+  text-align: center;
+  line-height: 300px;
+}

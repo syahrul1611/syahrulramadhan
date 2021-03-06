@@ -1,0 +1,251 @@
+@media (max-width: 576px) {
+    /* navigation */
+    nav {
+        background-image: url(../img/hero-photo.jpg);
+        background-size: cover;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+    }
+    nav .nav-brand {
+      margin-left: -40px;
+    }
+    nav .nav-brand h1 {
+      color: #fff;
+      border: 2px solid #fff;
+      padding: 0 5px;
+    }
+    nav .menu-toggle span {
+        background-color: #fff;
+    }
+    nav ul {
+        background-color: #022746;
+        border: 2px solid #ba9b2d;
+    }
+    nav .menu-toggle {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+    }
+    nav ul {
+    position: absolute;
+    top: 34px;
+    right: 0;
+    height: 300px;
+    width: 40%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+    -webkit-transition: all .5s;
+            transition: all .5s;
+    opacity: 0;
+    }
+    nav ul.slide {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 1;
+    }
+    /* jumbotron */
+    .hero{
+        margin-top: -17px;
+        height: 400px;
+    }
+    .hero h1 {
+        font-size: 30px;
+        padding-top: 100px;
+    }
+    .hero p {
+        font-size: 20px;
+        width: 400px;
+    }
+    /* education */
+    .education {
+        flex-direction: column;
+        justify-content: space-around;
+        gap: 15px;
+    }
+    .education .sd {
+        margin: auto;
+    }
+    .education .smp {
+        margin: auto;
+    }
+    .education .sma {
+        margin: auto;
+    }
+}
+@media (min-width: 577px) and (max-width: 768px) {
+    /* navigation */
+    nav {
+        background-image: url(../img/hero-photo.jpg);
+        background-size: cover;
+
+    } 
+    nav .nav-brand {
+        margin-left: 2%;
+        color: #fff;
+    }
+    /* jumbotron */
+    .hero {
+        background-image: none;
+        margin-top: -34px;
+        height: 400px;
+    }
+    .hero h1 {
+        padding-top: 100px;
+    }
+    .hero p {
+        font-size: 20px;
+    }
+    /* education */
+    .education {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .education .sd {
+        width: 500px;
+        margin: auto;
+    }
+    .education .smp {
+        width: 500px;
+        margin: auto;
+    }
+    .education .sma {
+        width: 500px;
+        margin: auto;
+    }
+}
+@media (min-width: 769px) and (max-width: 992px) { 
+    /* navigation */
+    nav .nav-brand {
+        margin-left: 3%;
+    }
+    /* jumbotron */
+    .hero {
+        background-position-x: 310px;
+    }
+    .hero h1 {
+        font-size: 28px;
+    }
+    .hero p {
+        font-size: 22px;
+        width: 400px;
+    }
+    /* education */
+    .education .sd {
+        width: 250px;
+    }
+    .education .sd p {
+        width: 250px;
+        font-size: 20px;
+    }
+    .education .sd img {
+        width: 250px;
+    }
+    .education .sd h1 {
+        top: -18px;
+        width: 250px;
+        font-size: 25px;
+    }
+    .education .smp {
+        width: 250px;
+    }
+    .education .smp p {
+        width: 250px;
+        font-size: 20px;
+    }
+    .education .smp img {
+        width: 250px;
+    }
+    .education .smp h1 {
+        top: -18px;
+        width: 250px;
+        font-size: 25px;
+    }
+    .education .sma {
+        width: 250px;
+    }
+    .education .sma p {
+        width: 250px;
+        font-size: 20px;
+    }
+    .education .sma img {
+        width: 250px;
+    }
+    .education .sma h1 {
+        top: -18px;
+        width: 250px;
+        font-size: 25px;
+    }
+}
+@media (min-width: 993px) and (max-width: 1200px) {
+    /* navigation */
+    nav .nav-brand {
+        margin-left: 4%;
+    }
+    /* jumbotron */
+    .hero {
+        margin-top: -85px;
+    }
+    /* education */
+    .education .sd {
+        width: 300px;
+    }
+    .education .sd p {
+        width: 300px;
+        font-size: 20px;
+    }
+    .education .sd img {
+        width: 300px;
+    }
+    .education .sd h1 {
+        top: -18px;
+        width: 300px;
+        font-size: 25px;
+    }
+    .education .smp {
+        width: 300px;
+    }
+    .education .smp p {
+        width: 300px;
+        font-size: 20px;
+    }
+    .education .smp img {
+        width: 300px;
+    }
+    .education .smp h1 {
+        top: -18px;
+        width: 300px;
+        font-size: 25px;
+    }
+    .education .sma {
+        width: 300px;
+    }
+    .education .sma p {
+        width: 300px;
+        font-size: 20px;
+    }
+    .education .sma img {
+        width: 300px;
+    }
+    .education .sma h1 {
+        top: -18px;
+        width: 300px;
+        font-size: 25px;
+    }
+}
+@media (min-width: 1400px) {
+    nav .nav-brand {
+        margin-left: 5%;
+    }
+}
