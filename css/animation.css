@@ -1,0 +1,7 @@
+.text-hover-animation:hover {
+  color: salmon;
+}
+
+.nav-menu input:checked ~ span {
+  background-color: red;
+}
