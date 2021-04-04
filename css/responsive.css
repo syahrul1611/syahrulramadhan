@@ -20,8 +20,9 @@
 
   /* menu button */
   .menu-toggle {
-    width: 50px;
-    height: 40px;
+    cursor: pointer;
+    width: 30px;
+    height: 25px;
     position: absolute;
     z-index: 2;
     opacity: 0;
@@ -47,6 +48,21 @@
 
   .nav-list {
     margin: 5px 0;
+  }
+
+  .img-html,
+  .img-css,
+  .img-js,
+  .info-html,
+  .info-css,
+  .info-js {
+    margin: 0 auto;
+  }
+
+  .info-html,
+  .info-css,
+  .info-js {
+    text-align: center;
   }
 }
 

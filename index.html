@@ -4,22 +4,24 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width, initial-scale=1">
 
-      <!-- Bootstrap CSS -->
-      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
-
       <!-- fonts awesome -->
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
 
+      <!-- Animation -->
+      <link rel="stylesheet" href="css/animation.css">
+
+      <!-- Bootstrap CSS -->
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+
       <!-- CSS -->
       <link rel="stylesheet" href="css/style.css">
-      <link rel="stylesheet" href="css/animation.css">
       <link rel="stylesheet" href="css/navbar.css">
 
       <!-- Responsive Breakpoints -->
       <link rel="stylesheet" href="css/responsive.css">
 
       <!-- icon title -->
-      <link rel="icon" href="img/icon-profile.ico">
+      <link rel="icon" href="img/profile2.png">
 
       <title>Muhamad Syahrul Ramadhan</title>
    </head>
@@ -27,7 +29,7 @@
 
       <nav class="bg-nav">
          <a class="nav-brand page-scroll my-auto" href="#">
-            <img src="img/icon-profile.ico" class="my-auto" width="30" height="30" class="d-inline-block align-text-top">
+            <img src="img/profile2.png" class="my-auto" width="30" height="30" class="d-inline-block align-text-top">
             Syahrul
          </a>
          
@@ -40,47 +42,96 @@
 
          <ul class="list-menu list-toggle">
             <li class="nav-list">
-               <a class="home text-shadow text-hover-animation page-scroll" href="#">Home</a>
+               <a class="home text-shadow page-scroll" href="#">Home</a>
             </li>
             <li class="nav-list">
-               <a class="skill text-shadow text-hover-animation page-scroll" href="#">Skill</a>
+               <a class="skill text-shadow page-scroll" href="#skill">Skill</a>
             </li>
             <li class="nav-list">
-               <a class="portfolio text-shadow text-hover-animation page-scroll" href="#">Portfolio</a>
+               <a class="portfolio text-shadow page-scroll" href="#">Portfolio</a>
             </li>
             <li class="nav-list">
-               <a class="contact text-shadow text-hover-animation page-scroll" href="#">Contact Me</a>
+               <a class="contact text-shadow page-scroll" href="#">Contact Me</a>
             </li>
          </ul>
       </nav>
 
-      <div class="hero d-flex">
+      <div class="hero d-flex container-fluid">
          <img class="profile rounded-circle border border-3 border-info img-thumbnail box-shadow" src="img/photo-profile.jpg" alt="photo-profile">
          <h1 class="display-5 text-shadow text-center text-light">Muhamad Syahrul R</h1>
          <p class="lead text-shadow text-center text-light">UI/UX Design | Web Design</p>
       </div>   
 
-      <div class="container">
+      <div class="container-fluid">
          <div class="row justify-content-center">
             <div class="col-10 info-panel">
                <div class="row">
                   <div class="col-lg">
                      <img src="img/webdev.png">
                      <h4 class="text-bold">Web Design</h4>
-                     <p>Lorem ipsum dolor sit amet.</p>
+                     <p>Amateur web design</p>
                   </div>
                   <div class="col-lg">
                      <img src="https://img.icons8.com/windows/100/000000/easy-listening.png">
                      <h4 class="text-bold">Listening to Music</h4>
-                     <p>Lorem ipsum dolor sit amet.</p>
+                     <p>Likes pop and rock genre songs</p>
                   </div>
                   <div class="col-lg">
                      <img src="img/play.png">
                      <h4 class="text-bold">Playing games</h4>
-                     <p>Lorem ipsum dolor sit amet.</p>
+                     <p>Loves FPS and action genre games</p>
                   </div>
                   
                </div>
+            </div>
+         </div>
+      </div>
+
+      <div id="skill" class="container">
+         <div class="row">
+            <div class="col">
+               <h1 class="text-center" style="font-weight: bold;">Skills</h1>
+            </div>
+         </div>
+         <div class="row mt-5">
+            <div class="col-auto img-html">
+               <img src="img/html5.png" width="300" alt="html-5">
+            </div>
+            <div class="col-sm info-html">
+               <h3 style="padding-top: 20px; font-weight: bold;">HTML 5</h3>
+               <span class="progress-html">Proficient</span>
+               <hr>
+               <p style="padding-top: 10px;">
+                  Understand the concept of HTML 5, flexible implementation of HTML 5 into website creation.
+               </p>
+            </div>
+         </div>
+         <div class="row mt-5">
+            <div class="col-auto img-css">
+               <img src="img/css3.png" width="300" alt="css-3">
+            </div>
+            <div class="col-sm info-css">
+               <h3 style="padding-top: 20px; font-weight: bold;">CSS 3</h3>
+               <span class="progress-html">Proficient</span>
+               <hr>
+               <p style="padding-top: 10px;">
+                  Understand the basic concepts of CSS 3, master the concepts of flexbox and grid.
+                  Flexible implementation of CSS 3 into website layouts.
+               </p>
+            </div>
+         </div>
+         <div class="row mt-5">
+            <div class="col-auto img-js">
+               <img src="img/javascript.png" width="300" alt="javascript">
+            </div>
+            <div class="col-sm info-js">
+               <h3 style="padding-top: 20px; font-weight: bold;">Javascript</h3>
+               <span class="progress-html">Competent</span>
+               <hr>
+               <p style="padding-top: 10px;">
+                  Understand the basic concepts of Javascript programming, understand the basics of the Document Object Model.
+                  Able to manipulate elements, add elements, and delete elements with the Document Object Model.
+               </p>
             </div>
          </div>
       </div>
@@ -91,7 +142,7 @@
 
       <!-- Bootstrap Script -->
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
-
+      
       <!-- script -->
       <script src="js/script.js"></script>
 

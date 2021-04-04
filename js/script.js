@@ -1,36 +1,3 @@
-const home = document.querySelector('.home');
-const skill = document.querySelector('.skill');
-const portfolio = document.querySelector('.portfolio');
-const contact = document.querySelector('.contact');
-
-home.addEventListener('click', function() {
-    home.classList.add('active');
-    skill.classList.remove('active');
-    portfolio.classList.remove('active');
-    contact.classList.remove('active');
-})
-
-skill.addEventListener('click', function() {
-    home.classList.remove('active');
-    skill.classList.add('active');
-    portfolio.classList.remove('active');
-    contact.classList.remove('active');
-})
-
-portfolio.addEventListener('click', function() {
-    home.classList.remove('active');
-    skill.classList.remove('active');
-    portfolio.classList.add('active');
-    contact.classList.remove('active');
-})
-
-contact.addEventListener('click', function() {
-    home.classList.remove('active');
-    skill.classList.remove('active');
-    portfolio.classList.remove('active');
-    contact.classList.add('active');
-})
-
 // animation jumbotron
 $(window).scroll(function() {
     var wScroll = $(this).scrollTop();
@@ -41,13 +8,41 @@ $(window).scroll(function() {
     $('.hero h1').css({
         'transform':'translate(0,'+ wScroll/5 +'%)'
     });
+
+    // paralax info panel appear
+    if(wScroll < $('.img-html').offset().top - 300) {
+        $('.info-panel').removeClass('appear');
+    } if(wScroll > $('.img-html').offset().top - 300) {
+        $('.info-panel').addClass('appear');
+    }
+
+    // paralax skill disappeared
+    if(wScroll < $('.img-html').offset().top - 200){
+        $('.img-html').removeClass('appear');
+        $('.info-html').removeClass('appear');
+    } if(wScroll < $('.img-css').offset().top - 300){
+        $('.img-css').removeClass('appear');
+        $('.info-css').removeClass('appear');
+    } if(wScroll < $('.img-js').offset().top - 300){
+        $('.img-js').removeClass('appear');
+        $('.info-js').removeClass('appear');
+    }
+
+    // paralax skill appear
+    if(wScroll > $('.img-html').offset().top - 200){
+        $('.img-html').addClass('appear');
+        $('.info-html').addClass('appear');
+    } if(wScroll > $('.img-css').offset().top - 300){
+        $('.img-css').addClass('appear');
+        $('.info-css').addClass('appear');
+    } if(wScroll > $('.img-js').offset().top - 300){
+        $('.img-js').addClass('appear');
+        $('.info-js').addClass('appear');
+    }
+
 });
 
-// list open
-const toggle = document.querySelector('.menu-toggle');
-
-const listMenu = document.querySelector('.list-menu');
-
-toggle.addEventListener('click', function () {
-    listMenu.classList.toggle('list-open');
+// menu toggle
+$(".menu-toggle").click(function () {
+    $(".list-menu").toggleClass('list-open');
 })
