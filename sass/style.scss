@@ -8,7 +8,6 @@ body {
   margin: 0;
   padding: 0;
   font-family: "PT Sans", sans-serif;
-  height: 5000px;
   overflow-x: hidden;
 }
 
@@ -20,34 +19,54 @@ body {
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
 }
 
-.box-shadow {
-  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
-}
-
-.text-bold {
-  font-weight: bold;
-}
-
 // navbar
-
 .bg-nav {
+  display: flex;
+  height: 60px;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 4;
   background-color: rgb(13, 202, 250);
 
   .nav-brand {
+    margin-left: 10vw;
     text-decoration: none;
     color: rgb(70, 70, 70);
   }
 
+  .nav-menu input:checked ~ span {
+    background-color: red;
+  }
+
   .list-menu {
+    display: flex;
+    justify-content: space-between;
+    height: 60px;
+    margin-right: 10vw;
     background-color: rgb(13, 202, 250);
 
-    .home,
-    .skill,
-    .portfolio,
-    .contact {
-      text-decoration: none;
-      color: rgb(70, 70, 70);
-      margin: 0 8px;
+    .nav-list {
+      list-style: none;
+      margin: auto;
+
+      .home,
+      .skill,
+      .portfolio,
+      .contact {
+        text-decoration: none;
+        color: rgb(70, 70, 70);
+        margin: 0 8px;
+      }
+
+      .home:hover,
+      .skill:hover,
+      .portfolio:hover,
+      .contact:hover {
+        color: blue;
+      }
     }
   }
 }
@@ -66,6 +85,7 @@ body {
   .profile {
     width: 200px;
     margin: 0 auto;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
   }
 }
 
@@ -136,4 +156,160 @@ body {
     opacity: 1;
     transform: translateX(0);
   }
+}
+
+// Portfolio
+#portfolio {
+  margin-top: 50px;
+  padding-top: 60px;
+  text-align: center;
+
+  .card {
+    box-shadow: 0 3px 20px rgba(0, 0, 0, 0.5);
+  }
+
+  .c1,
+  .c2,
+  .c3 {
+    opacity: 0;
+    transition: 0.3s;
+    transform: translateY(-100px);
+  }
+
+  .c2 {
+    transition-delay: 0.2s;
+  }
+  .c3 {
+    transition-delay: 0.3s;
+  }
+
+  .c1.Cappear,
+  .c2.Cappear,
+  .c3.Cappear {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+// Contact me
+#contact {
+  margin-top: 50px;
+  padding-top: 60px;
+
+  .instagram {
+    text-decoration: none;
+    color: rgb(70, 70, 70);
+    font-size: 1.4em;
+    height: 30px;
+  }
+  .instagram::before {
+    content: "";
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background-image: url(../img/instagram.png);
+    background-size: cover;
+    margin-right: 6px;
+  }
+  .instagram:hover {
+    color: blue;
+  }
+
+  .github {
+    text-decoration: none;
+    color: rgb(70, 70, 70);
+    font-size: 1.4em;
+    height: 30px;
+  }
+  .github::before {
+    content: "";
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background-image: url(../img/github.png);
+    background-size: cover;
+    margin-right: 6px;
+  }
+  .github:hover {
+    color: blue;
+  }
+
+  .gmail {
+    text-decoration: none;
+    color: rgb(70, 70, 70);
+    font-size: 1.4em;
+    height: 30px;
+  }
+  .gmail::before {
+    content: "";
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background-image: url(../img/gmail.png);
+    background-size: cover;
+    margin-right: 6px;
+  }
+  .gmail:hover {
+    color: blue;
+  }
+
+  form {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px 40px;
+    color: rgb(70, 70, 70);
+    border-radius: 5px;
+    box-shadow: 0 3px 20px rgba(0, 0, 0, 0.5);
+  }
+
+  label {
+    margin-top: 20px;
+  }
+
+  label,
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    display: block;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    margin-top: 10px;
+    height: 40px;
+    width: 100%;
+    border-radius: 5px;
+    border: none;
+    padding: 10px;
+    font-family: inherit;
+    border: 1px solid black;
+  }
+
+  textarea {
+    height: 100px;
+  }
+
+  button {
+    background-color: lightseagreen;
+    margin-top: 30px;
+    height: 40px;
+    width: 100%;
+    border-radius: 5px;
+    border: none;
+    padding: 10px;
+    font-family: inherit;
+  }
+
+  button:hover {
+    background-color: lightskyblue;
+  }
+}
+
+// footer
+footer {
+  text-align: center;
+  line-height: 30px;
+  height: 30px;
+  background-color: lightblue;
 }

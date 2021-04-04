@@ -4,9 +4,6 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width, initial-scale=1">
 
-      <!-- fonts awesome -->
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
-
       <!-- Animation -->
       <link rel="stylesheet" href="css/animation.css">
 
@@ -15,7 +12,6 @@
 
       <!-- CSS -->
       <link rel="stylesheet" href="css/style.css">
-      <link rel="stylesheet" href="css/navbar.css">
 
       <!-- Responsive Breakpoints -->
       <link rel="stylesheet" href="css/responsive.css">
@@ -27,6 +23,7 @@
    </head>
    <body>
 
+      <!-- Navbar -->
       <nav class="bg-nav">
          <a class="nav-brand page-scroll my-auto" href="#">
             <img src="img/profile2.png" class="my-auto" width="30" height="30" class="d-inline-block align-text-top">
@@ -48,37 +45,39 @@
                <a class="skill text-shadow page-scroll" href="#skill">Skill</a>
             </li>
             <li class="nav-list">
-               <a class="portfolio text-shadow page-scroll" href="#">Portfolio</a>
+               <a class="portfolio text-shadow page-scroll" href="#portfolio">Portfolio</a>
             </li>
             <li class="nav-list">
-               <a class="contact text-shadow page-scroll" href="#">Contact Me</a>
+               <a class="contact text-shadow page-scroll" href="#contact">Contact Me</a>
             </li>
          </ul>
       </nav>
 
+      <!-- Jumbotron -->
       <div class="hero d-flex container-fluid">
-         <img class="profile rounded-circle border border-3 border-info img-thumbnail box-shadow" src="img/photo-profile.jpg" alt="photo-profile">
+         <img class="profile rounded-circle border border-3 border-info img-thumbnail" src="img/photo-profile.jpg" alt="photo-profile">
          <h1 class="display-5 text-shadow text-center text-light">Muhamad Syahrul R</h1>
          <p class="lead text-shadow text-center text-light">UI/UX Design | Web Design</p>
       </div>   
 
+      <!-- Info Panel -->
       <div class="container-fluid">
          <div class="row justify-content-center">
             <div class="col-10 info-panel">
                <div class="row">
                   <div class="col-lg">
                      <img src="img/webdev.png">
-                     <h4 class="text-bold">Web Design</h4>
+                     <h4 style="font-weight: bold;">Web Design</h4>
                      <p>Amateur web design</p>
                   </div>
                   <div class="col-lg">
                      <img src="https://img.icons8.com/windows/100/000000/easy-listening.png">
-                     <h4 class="text-bold">Listening to Music</h4>
+                     <h4 style="font-weight: bold;">Listening to Music</h4>
                      <p>Likes pop and rock genre songs</p>
                   </div>
                   <div class="col-lg">
                      <img src="img/play.png">
-                     <h4 class="text-bold">Playing games</h4>
+                     <h4 style="font-weight: bold;">Playing games</h4>
                      <p>Loves FPS and action genre games</p>
                   </div>
                   
@@ -87,7 +86,8 @@
          </div>
       </div>
 
-      <div id="skill" class="container">
+      <!-- Skill -->
+      <section id="skill" class="container">
          <div class="row">
             <div class="col">
                <h1 class="text-center" style="font-weight: bold;">Skills</h1>
@@ -115,7 +115,7 @@
                <span>Proficient</span>
                <hr>
                <p style="padding-top: 10px;">
-                  Understand the basic concepts of CSS 3, master the concepts of flexbox and grid.
+                  Understand the basic concepts of CSS 3, master the concepts of flexbox and grid. <br>
                   Flexible implementation of CSS 3 into website layouts.
                </p>
             </div>
@@ -129,12 +129,109 @@
                <span>Competent</span>
                <hr>
                <p style="padding-top: 10px;">
-                  Understand the basic concepts of Javascript programming, understand the basics of the Document Object Model.
+                  Understand the basic concepts of Javascript programming, understand the basics of the Document Object Model. <br>
                   Able to manipulate elements, add elements, and delete elements with the Document Object Model.
                </p>
             </div>
          </div>
-      </div>
+      </section>
+
+      <!-- Portfolio -->
+      <section id="portfolio" class="container">
+         <div class="row">
+            <div class="col">
+               <h1 class="text-center" style="font-weight: bold;">Portfolio</h1>
+            </div>
+         </div>
+         
+         <div class="row pt-5">
+            <div class="col">
+               <!-- game suit jawa -->
+               <div class="card c1 mt-5 mx-auto" style="width: 18rem;">
+                  <img src="img/game-suit-jawa-ss.png" class="card-img-top">
+                  <div class="card-body">
+                  <h5 class="card-title">Game Suit Jawa</h5>
+                  <p class="card-text">
+                     A game that implements the javascript language and uses the concept of the Document Object Model such as manipulating and adding elements.
+                  </p>
+                  <a href="https://syahrul1611.github.io/game-suit-jawa/" target="_blank" class="btn btn-primary">Go To Github</a>
+                  </div>
+               </div>
+            </div>
+            <div class="col">
+               <!-- survey page -->
+               <div class="card c2 mt-5 mx-auto" style="width: 18rem;">
+                  <img src="img/survey-ronaldo-ss.png" class="card-img-top">
+                  <div class="card-body">
+                  <h5 class="card-title">Survey Page Ronaldo</h5>
+                  <p class="card-text">
+                     A survey page that implements the concept of an HTML 5 themed form of Cristiano Ronaldo.
+                  </p>
+                  <a href="https://syahrul1611.github.io/ronaldo-survey/" target="_blank" class="btn btn-primary">Go To Github</a>
+                  </div>
+               </div>
+            </div>
+            <div class="col">
+               <!-- tribute page -->
+               <div class="card c3 mt-5 mx-auto" style="width: 18rem;">
+                  <img src="img/tribute-ronaldo-ss.png" class="card-img-top">
+                  <div class="card-body">
+                  <h5 class="card-title">Tribute Page Ronaldo</h5>
+                  <p class="card-text">
+                     A tribute page that uses responsive HTML 5 layouting concepts and techniques.
+                  </p>
+                  <a href="https://syahrul1611.github.io/tribute-page-cr7/" target="_blank" class="btn btn-primary">Go To Github</a>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+
+      <!-- Contact Me -->
+      <section id="contact" class="container">
+         <div class="row">
+            <div class="col">
+               <h1 class="text-center" style="font-weight: bold;">Contact Me</h1>
+            </div>
+         </div>
+
+         <div class="row mt-5">
+            <div class="col-sm text-center">
+               <a href="https://www.instagram.com/syahrulramadhan123009/" class="instagram">My Instagram</a>
+            </div>
+            <div class="col-sm mt-2 text-center">
+               <a href="https://github.com/syahrul1611" class="github">My Github</a>
+            </div>
+            <div class="col-sm mt-2 text-center">
+               <a href="mailto:ramadhan112009@gmail.com" class="gmail">My Gmail</a>
+            </div>
+         </div>
+
+         <div class="row mt-3">
+            <form action="" method="GET">
+               <h3 class="text-center" style="font-weight: bold;">Leave a comment</h3>
+               <label for="name">
+                  Name
+                  <input type="text" id="name" placeholder="Enter your name" required>
+               </label>
+               <label for="email">
+                  Email
+                  <input type="email" id="email" placeholder="Enter your email" required>
+               </label>
+               <label for="suggestion">
+                  Any comments or suggestions?
+                  <textarea id="suggestion" cols="30" rows="10"></textarea>
+               </label>
+               <button type="submit">Submit</button>
+            </form>
+         </div>
+      </section>
+
+      <!-- Footer -->
+      <footer>
+         &copy; Copyright 2021
+      </footer>
+
 
       <!-- Jquery -->
       <script src="js/jquery-3.6.0.js"></script>

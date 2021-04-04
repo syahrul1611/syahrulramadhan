@@ -40,6 +40,20 @@ $(window).scroll(function() {
         $('.info-js').addClass('appear');
     }
 
+    // paralax portfolio appear
+    if(wScroll > $('.c1').offset().top - 300){
+        $('.c1').addClass('Cappear');
+        $('.c2').addClass('Cappear');
+        $('.c3').addClass('Cappear');
+    }
+
+    // paralax portfolio disappeared
+    if(wScroll < $('.c1').offset().top - 300){
+        $('.c1').removeClass('Cappear');
+        $('.c2').removeClass('Cappear');
+        $('.c3').removeClass('Cappear');
+    }
+
 });
 
 // menu toggle
