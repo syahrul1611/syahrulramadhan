@@ -131,9 +131,9 @@ body {
     transition-delay: 0.3s;
   }
 
-  .c1.Cappear,
-  .c2.Cappear,
-  .c3.Cappear {
+  .c1.appear,
+  .c2.appear,
+  .c3.appear {
     opacity: 1;
     transform: translateY(0);
   }
@@ -251,6 +251,23 @@ body {
 
   button:hover {
     background-color: lightskyblue;
+  }
+
+  form,
+  .instagram,
+  .github,
+  .gmail {
+    opacity: 0;
+    transform: scale(0);
+    transition: 0.5s all;
+  }
+
+  form.appear,
+  .instagram.appear,
+  .github.appear,
+  .gmail.appear {
+    opacity: 1;
+    transform: scale(1);
   }
 }
 

@@ -148,9 +148,9 @@ body {
           transition-delay: 0.3s;
 }
 
-#portfolio .c1.Cappear,
-#portfolio .c2.Cappear,
-#portfolio .c3.Cappear {
+#portfolio .c1.appear,
+#portfolio .c2.appear,
+#portfolio .c3.appear {
   opacity: 1;
   -webkit-transform: translateY(0);
           transform: translateY(0);
@@ -275,6 +275,26 @@ body {
 
 #contact button:hover {
   background-color: lightskyblue;
+}
+
+#contact form,
+#contact .instagram,
+#contact .github,
+#contact .gmail {
+  opacity: 0;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+}
+
+#contact form.appear,
+#contact .instagram.appear,
+#contact .github.appear,
+#contact .gmail.appear {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
 }
 
 footer {

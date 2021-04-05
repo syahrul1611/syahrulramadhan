@@ -42,16 +42,31 @@ $(window).scroll(function() {
 
     // paralax portfolio appear
     if(wScroll > $('.c1').offset().top - 300){
-        $('.c1').addClass('Cappear');
-        $('.c2').addClass('Cappear');
-        $('.c3').addClass('Cappear');
+        $('.c1').addClass('appear');
+        $('.c2').addClass('appear');
+        $('.c3').addClass('appear');
     }
 
     // paralax portfolio disappeared
     if(wScroll < $('.c1').offset().top - 300){
-        $('.c1').removeClass('Cappear');
-        $('.c2').removeClass('Cappear');
-        $('.c3').removeClass('Cappear');
+        $('.c1').removeClass('appear');
+        $('.c2').removeClass('appear');
+        $('.c3').removeClass('appear');
     }
 
+    // paralax contact appear
+    if(wScroll > $('#contact').offset().top - 200){
+        $('form').addClass('appear');
+        $('.instagram').addClass('appear');
+        $('.gmail').addClass('appear');
+        $('.github').addClass('appear');
+    }
+
+    // paralax contact disappeared
+    if(wScroll < $('#contact').offset().top - 200){
+        $('form').removeClass('appear');
+        $('.instagram').removeClass('appear');
+        $('.gmail').removeClass('appear');
+        $('.github').removeClass('appear');
+    }
 });
