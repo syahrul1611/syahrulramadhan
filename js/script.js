@@ -55,8 +55,3 @@ $(window).scroll(function() {
     }
 
 });
-
-// menu toggle
-$(".menu-toggle").click(function () {
-    $(".list-menu").toggleClass('list-open');
-})

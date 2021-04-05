@@ -4,9 +4,6 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width, initial-scale=1">
 
-      <!-- Animation -->
-      <link rel="stylesheet" href="css/animation.css">
-
       <!-- Bootstrap CSS -->
       <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
 
@@ -24,33 +21,24 @@
    <body>
 
       <!-- Navbar -->
-      <nav class="bg-nav">
-         <a class="nav-brand page-scroll my-auto" href="#">
-            <img src="img/profile2.png" class="my-auto" width="30" height="30" class="d-inline-block align-text-top">
-            Syahrul
-         </a>
-         
-         <div class="nav-menu">
-            <input class="menu-toggle" type="checkbox">
-            <span></span>
-            <span></span>
-            <span></span>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+         <div class="container-fluid">
+            <a class="navbar-brand px-5" href="#">
+               <img src="img/profile2.png" alt="" width="30" height="24" class="d-inline-block align-text-top">
+               Syahrul
+             </a>
+           <button class="navbar-toggler type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+             <span class="navbar-toggler-icon"></span>
+           </button>
+           <div class="collapse navbar-collapse justify-content-end px-5" id="navbarNavAltMarkup">
+             <div class="navbar-nav">
+               <a class="nav-link" aria-current="page" href="#">Home</a>
+               <a class="nav-link" href="#skill">Skill</a>
+               <a class="nav-link" href="#portfolio">Portfolio</a>
+               <a class="nav-link" href="#contact">Contact Me</a>
+             </div>
+           </div>
          </div>
-
-         <ul class="list-menu list-toggle">
-            <li class="nav-list">
-               <a class="home text-shadow page-scroll" href="#">Home</a>
-            </li>
-            <li class="nav-list">
-               <a class="skill text-shadow page-scroll" href="#skill">Skill</a>
-            </li>
-            <li class="nav-list">
-               <a class="portfolio text-shadow page-scroll" href="#portfolio">Portfolio</a>
-            </li>
-            <li class="nav-list">
-               <a class="contact text-shadow page-scroll" href="#contact">Contact Me</a>
-            </li>
-         </ul>
       </nav>
 
       <!-- Jumbotron -->

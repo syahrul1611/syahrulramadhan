@@ -19,61 +19,9 @@ body {
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
 }
 
-// navbar
-.bg-nav {
-  display: flex;
-  height: 60px;
-  justify-content: space-between;
-  position: fixed;
-  top: 0;
-  right: 0;
-  left: 0;
-  z-index: 4;
-  background-color: rgb(13, 202, 250);
-
-  .nav-brand {
-    margin-left: 10vw;
-    text-decoration: none;
-    color: rgb(70, 70, 70);
-  }
-
-  .nav-menu input:checked ~ span {
-    background-color: red;
-  }
-
-  .list-menu {
-    display: flex;
-    justify-content: space-between;
-    height: 60px;
-    margin-right: 10vw;
-    background-color: rgb(13, 202, 250);
-
-    .nav-list {
-      list-style: none;
-      margin: auto;
-
-      .home,
-      .skill,
-      .portfolio,
-      .contact {
-        text-decoration: none;
-        color: rgb(70, 70, 70);
-        margin: 0 8px;
-      }
-
-      .home:hover,
-      .skill:hover,
-      .portfolio:hover,
-      .contact:hover {
-        color: blue;
-      }
-    }
-  }
-}
-
 // jumbotron
 .hero {
-  margin-top: 60px;
+  margin-top: 45px;
   padding-top: 5vh;
   height: 80vh;
   flex-direction: column;
