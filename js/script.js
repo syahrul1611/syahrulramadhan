@@ -17,45 +17,45 @@ $(window).scroll(function() {
     }
 
     // paralax skill disappeared
-    if(wScroll < $('.img-html').offset().top - 200){
+    if(wScroll < $('.img-html').offset().top - 500){
         $('.img-html').removeClass('appear');
         $('.info-html').removeClass('appear');
-    } if(wScroll < $('.img-css').offset().top - 300){
+    } if(wScroll < $('.img-css').offset().top - 500){
         $('.img-css').removeClass('appear');
         $('.info-css').removeClass('appear');
-    } if(wScroll < $('.img-js').offset().top - 300){
+    } if(wScroll < $('.img-js').offset().top - 500){
         $('.img-js').removeClass('appear');
         $('.info-js').removeClass('appear');
     }
 
     // paralax skill appear
-    if(wScroll > $('.img-html').offset().top - 200){
+    if(wScroll > $('.img-html').offset().top - 500){
         $('.img-html').addClass('appear');
         $('.info-html').addClass('appear');
-    } if(wScroll > $('.img-css').offset().top - 300){
+    } if(wScroll > $('.img-css').offset().top - 500){
         $('.img-css').addClass('appear');
         $('.info-css').addClass('appear');
-    } if(wScroll > $('.img-js').offset().top - 300){
+    } if(wScroll > $('.img-js').offset().top - 500){
         $('.img-js').addClass('appear');
         $('.info-js').addClass('appear');
     }
 
     // paralax portfolio appear
-    if(wScroll > $('.c1').offset().top - 300){
+    if(wScroll > $('.c1').offset().top - 350){
         $('.c1').addClass('appear');
         $('.c2').addClass('appear');
         $('.c3').addClass('appear');
     }
 
     // paralax portfolio disappeared
-    if(wScroll < $('.c1').offset().top - 300){
+    if(wScroll < $('.c1').offset().top - 350){
         $('.c1').removeClass('appear');
         $('.c2').removeClass('appear');
         $('.c3').removeClass('appear');
     }
 
     // paralax contact appear
-    if(wScroll > $('#contact').offset().top - 200){
+    if(wScroll > $('#contact').offset().top - 300){
         $('form').addClass('appear');
         $('.instagram').addClass('appear');
         $('.gmail').addClass('appear');
@@ -63,7 +63,7 @@ $(window).scroll(function() {
     }
 
     // paralax contact disappeared
-    if(wScroll < $('#contact').offset().top - 200){
+    if(wScroll < $('#contact').offset().top - 300){
         $('form').removeClass('appear');
         $('.instagram').removeClass('appear');
         $('.gmail').removeClass('appear');
