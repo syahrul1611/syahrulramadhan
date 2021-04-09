@@ -9,33 +9,28 @@ $(window).scroll(function() {
         'transform':'translate(0,'+ wScroll/5 +'%)'
     });
 
-    // paralax info panel appear
-    if(wScroll < $('.img-html').offset().top - 300) {
-        $('.info-panel').removeClass('appear');
-    } if(wScroll > $('.img-html').offset().top - 300) {
-        $('.info-panel').addClass('appear');
-    }
-
     // paralax skill disappeared
-    if(wScroll < $('.img-html').offset().top - 500){
+    if(wScroll < $('.img-html').offset().top - 350){
         $('.img-html').removeClass('appear');
         $('.info-html').removeClass('appear');
-    } if(wScroll < $('.img-css').offset().top - 500){
+        $('.info-panel').removeClass('appear');
+    } if(wScroll < $('.img-css').offset().top - 350){
         $('.img-css').removeClass('appear');
         $('.info-css').removeClass('appear');
-    } if(wScroll < $('.img-js').offset().top - 500){
+    } if(wScroll < $('.img-js').offset().top - 350){
         $('.img-js').removeClass('appear');
         $('.info-js').removeClass('appear');
     }
 
     // paralax skill appear
-    if(wScroll > $('.img-html').offset().top - 500){
+    if(wScroll > $('.img-html').offset().top - 350){
         $('.img-html').addClass('appear');
         $('.info-html').addClass('appear');
-    } if(wScroll > $('.img-css').offset().top - 500){
+        $('.info-panel').addClass('appear');
+    } if(wScroll > $('.img-css').offset().top - 350){
         $('.img-css').addClass('appear');
         $('.info-css').addClass('appear');
-    } if(wScroll > $('.img-js').offset().top - 500){
+    } if(wScroll > $('.img-js').offset().top - 350){
         $('.img-js').addClass('appear');
         $('.info-js').addClass('appear');
     }
